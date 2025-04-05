@@ -26,3 +26,7 @@ app.use('api/users', userRoutes);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
 
+const User = require('./models/User');
+db.sync()
+    .then(() => console.log('Database synchronized'))
+    .catch(err => console.error('Error syncing database:', err));
