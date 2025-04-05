@@ -41,3 +41,5 @@ jspm_packages/
 
 # Test outputs
 test-results/
+
+.env
